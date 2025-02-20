@@ -4,7 +4,7 @@
   "description": "Builds PDFs",
   "main": "index.js",
   "scripts": {
-    "buildPDF": "node ./src/index.js"
+    "buildPDF": "node ./src/example.js"
   },
   "author": "Cayden Lunt",
   "license": "ISC",

@@ -8,5 +8,5 @@
 import genPdf from "./genPdf.js";
 
 let pdf = genPdf.createPDF();                       // Create a PDF to modify    
-pdf.fontSize(25).text('Hello, PDF!', 100, 100);     // Write text to the PDF
+pdf.fontSize(25).text('Hello, World!', 100, 100);     // Write text to the PDF
 genPdf.savePDF(pdf);                                // save the PDF
