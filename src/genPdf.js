@@ -16,7 +16,7 @@ class genPDF {
    */
   createPDF() {
     const doc = new PDFDocument();                            // create a PDFDocument
-    doc.pipe(fs.createWriteStream("../Output/output.pdf"));   // Pipe the PDF to a file
+    doc.pipe(fs.createWriteStream("./Output/output.pdf"));   // Pipe the PDF to a file
     return doc;                                               // return the PDF to be modified
   }
 
