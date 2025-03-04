@@ -1,1 +1,1 @@
-(Image.txt )Photo by Mario Cuadros: https://www.pexels.com/photo/looking-through-a-aircraft-window-3082851/
+(./src/Image.jpg)Photo by Mario Cuadros: https://www.pexels.com/photo/looking-through-a-aircraft-window-3082851/
