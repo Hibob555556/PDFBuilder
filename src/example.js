@@ -5,8 +5,16 @@
  ****************************************** */
 
 // import needed deps
-import genPdf from "./genPdf.js";
+import { img, txt, genPDF } from "./genPdf.js";
 
-let pdf = genPdf.createPDF();                       // Create a PDF to modify    
-pdf.fontSize(25).text('Hello, World!', 100, 100);     // Write text to the PDF
-genPdf.savePDF(pdf);                                // save the PDF
+const pdfBuilder = new genPDF();
+
+let pdf = pdfBuilder.createPDF();
+let text = new txt("Hello PDFBuilder!", 20, "blue");
+// Photo by Mario Cuadros: https://www.pexels.com/photo/looking-through-a-aircraft-window-3082851/
+let image = new img("./src/Image.jpg", 450, 300);
+
+pdfBuilder.addImage(pdf, image);
+pdfBuilder.addText(pdf, text);
+
+pdfBuilder.savePDF(pdf);
